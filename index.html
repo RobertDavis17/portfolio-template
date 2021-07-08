@@ -17,31 +17,56 @@
 </head>
 
 <body>
+    <b>
+    <button id="mybtn">Switch To Light Mode</button>
+    </b>
     <script>
         alert('Welcome to My Portfolio')
+        document.getElementById("mybtn").addEventListener("click", myFunction);
+        function myFunction() {
+  const curcolor = document.body.style.backgroundcolor;
+
+  if (curcolor === 'rgb(68, 61, 61)') {
+      document.body.style.backgroundColor = "white";
+  }
+  else {
+      document.body.style.backgroundColor = "white";
+      
+  }
+  
+  }
+
     </script>
+    <style>
+        a:hover {
+            background-color: blueviolet;
+        }
+    </style>
     <header>
         <h1 class='title'>Robert's Portfolio</h1>
     </header>
     <main>
         <section class='about-me'>
             <img class='profile-pic' alt="Profile picture"
-                src='https://img.pokemondb.net/artwork/large/phanpy.jpg' />
+                src='https://lh3.googleusercontent.com/pw/AM-JKLWBT48MibgVWYEijxUeCQ9aSOPsdtPPICBwDoD9xes6OJ9q0461h8CdtPBEF8rxWIVmzeXkQmuSZdNA9M9z71FKTzYoZOd-0i5tz2PcNb-WDge6tNzE6sJjNtoy1-e2d0LtZ9G-kEvR0DKKrKbjZ6wLJA=w1316-h1754-no?authuser=0' />
             <h2>About Me</h2>
-            <p> Hi, my name is Robert Davis. I am 17 years old. I work at target on the weekends. I enjoy playing video games esspecially pokemon. Phanpy is one of my favorite pokemon and that is why it is the profile pic for this Portfolio.   </p>
+            <p> Hi, my name is Robert (Bobby) Davis. I am 17 years old. I work at target on the weekends. 
+                I enjoy playing video games esspecially pokemon. My profile picture is of me in my suit before my prom last spring. I run an online teeshirt company called TeesByBobby with my mom.  </p>
         </section>
         <section class='projects'>
             <h2>Projects and Resume</h2>
             <ul class='projects-list'>
                 <li><a href='https://github.com/' target="_blank">First Project</a></li>
                 <li><a href='file:///C:/Users/rober/Downloads/Robert%20Davis%20Resume%202021%202%20pager.pdf' target="blank">Resume</a></li>
+                <li><a href='https://www.etsy.com/shop/TeesByBobby' target="blank">TeesByBobby</a></li>
             </ul>
             <h2>Experience</h2>
             <div>
                 <h3 class='experience-organization'>Edelweiss+ by Above the Treeline</h3><span>, Software Internship,
                     2021</span>           
                 <p>This fall I will be senior at Southfield Christian High School. I have experience with something similar to front end development that being helping design my school's yearbook.
-                     I find the field of software developmet very interesting and I am excited to gain some experience.   </p>
+                     I find the field of software developmet very interesting and I am excited to gain some experience.</p>
+                     
             </div>
         </section>
     </main>
